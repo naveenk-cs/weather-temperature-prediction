@@ -8,7 +8,7 @@ The project uses **feature engineering** and a **Random Forest Regression** mode
 
 ## 🎯 Problem Statement
 
-Weather conditions change continuously, and predicting temperature accurately can be useful for areas such as:
+Weather conditions change continuously, and predicting temperature accurately can be useful for:
 
 - Agriculture
 - Energy management
@@ -67,7 +67,7 @@ The project includes 10 major Indian cities:
 
 ## 🔑 Main Features
 
-The original dataset contains features such as:
+The original dataset contains:
 
 - `city`
 - `date`
@@ -84,7 +84,7 @@ The original dataset contains features such as:
 
 ### 🧠 Engineered Features
 
-Additional features were created to help the model understand temporal patterns:
+Additional features were created to capture temporal patterns:
 
 - `month`
 - `temp_lag_1`
