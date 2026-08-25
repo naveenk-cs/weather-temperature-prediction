@@ -136,9 +136,6 @@ Model Training
 Model Evaluation
           ↓
 Next-Day Temperature Prediction
-
----
-
 ---
 
 ## 🛠️ Technologies Used
@@ -169,8 +166,6 @@ weather-temperature-prediction/
 ├── images/
 │   └── actual_vs_predicted.png
 │
-├── models/
-│
 ├── notebooks/
 │   └── weather_temperature_prediction.ipynb
 │
@@ -180,7 +175,6 @@ weather-temperature-prediction/
 ├── .gitignore
 ├── README.md
 └── requirements.txt
-```
 
 > Note: The trained model is excluded from GitHub because the `.pkl` file is approximately 1.14 GB and exceeds GitHub's 100 MB file size limit.
 
