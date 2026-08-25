@@ -113,3 +113,26 @@ The following graph compares the actual temperatures with the temperatures predi
 <p align="center">
   <img src="images/actual_vs_predicted.png" alt="Actual vs Predicted Temperature" width="900">
 </p>
+
+---
+
+## 🧠 Machine Learning Approach
+
+The project follows this workflow:
+
+```text
+Historical Weather Data
+          ↓
+Data Cleaning
+          ↓
+Feature Engineering
+          ↓
+Lag & Rolling Features
+          ↓
+Train/Test Split
+          ↓
+Model Training
+          ↓
+Model Evaluation
+          ↓
+Next-Day Temperature Prediction
