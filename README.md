@@ -154,3 +154,104 @@ Next-Day Temperature Prediction
 - Visual Studio Code
 - Git
 - GitHub
+
+
+---
+
+## 📁 Project Structure
+
+```text
+weather-temperature-prediction/
+│
+├── data/
+│   └── india_2000_2024_daily_weather.csv
+│
+├── images/
+│   └── actual_vs_predicted.png
+│
+├── models/
+│
+├── notebooks/
+│   └── weather_temperature_prediction.ipynb
+│
+├── src/
+│   └── predict.py
+│
+├── .gitignore
+├── README.md
+└── requirements.txt
+```
+
+> Note: The trained model is excluded from GitHub because the `.pkl` file is approximately 1.14 GB and exceeds GitHub's 100 MB file size limit.
+
+---
+
+## ⚙️ Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/naveenk-cs/weather-temperature-prediction.git
+```
+
+Go into the project directory:
+
+```bash
+cd weather-temperature-prediction
+```
+
+Install the required dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## ▶️ Usage
+
+The complete machine learning workflow is available in:
+
+```text
+notebooks/weather_temperature_prediction.ipynb
+```
+
+The prediction script is available in:
+
+```text
+src/predict.py
+```
+
+The notebook includes:
+
+- Data loading
+- Data preprocessing
+- Feature engineering
+- Model training
+- Model evaluation
+- Temperature prediction
+- Visualization
+
+---
+
+## 👨‍💻 Author
+
+Naveen
+
+B.Tech Student | AI & Machine Learning Enthusiast
+
+Interested in:
+- Artificial Intelligence
+- Machine Learning
+- Python
+- Data Science
+- Software Development
+
+---
+
+## ⭐ Project
+
+If you find this project useful or interesting, consider giving the repository a star.
+
+GitHub Repository:
+https://github.com/naveenk-cs/weather-temperature-prediction
