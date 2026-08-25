@@ -136,3 +136,19 @@ Model Training
 Model Evaluation
           ↓
 Next-Day Temperature Prediction
+
+---
+
+## 🛠️ Technologies Used
+
+- **Python**
+- **Pandas**
+- **NumPy**
+- **Scikit-learn**
+- **Matplotlib**
+- **Joblib**
+- **Jupyter Notebook**
+- **Google Colab**
+- **Visual Studio Code**
+- **Git**
+- **GitHub**
