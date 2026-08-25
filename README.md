@@ -1,16 +1,34 @@
-# Weather Temperature Prediction
+# 🌦️ Weather Temperature Prediction for Indian Cities
 
-A machine learning project that predicts the next day's maximum temperature using historical daily weather data from major Indian cities.
+A machine learning project that predicts the next day's maximum temperature for major Indian cities using historical daily weather data from 2000 to 2024.
 
-## Project Overview
+The project uses feature engineering and a Random Forest Regression model to learn relationships between historical temperature, weather conditions, wind, precipitation, and time-based features.
 
-This project uses historical weather data from 2000 to 2024 to train a machine learning model for next-day maximum temperature prediction.
+## 🎯 Problem Statement
 
-The project includes data preprocessing, feature engineering, model training, evaluation, and a prediction script for using the trained model.
+Weather conditions change over time and accurate temperature prediction can be useful for planning, agriculture, transportation, energy management, and other applications.
 
-## Dataset
+This project explores how machine learning can use historical weather observations to predict the next day's maximum temperature.
 
-The dataset contains daily weather observations for 10 major Indian cities:
+## 🚀 Project Objective
+
+The main objective is to build a machine learning model that can:
+
+- Predict the next day's maximum temperature
+- Learn patterns from historical weather data
+- Use lag and rolling temperature features
+- Compare model performance using standard regression metrics
+- Provide a reusable prediction script
+
+## 📊 Dataset
+
+The dataset contains daily weather observations from:
+
+**January 1, 2000 to December 31, 2024**
+
+### Cities
+
+The project includes 10 major Indian cities:
 
 - Delhi
 - Mumbai
@@ -23,63 +41,46 @@ The dataset contains daily weather observations for 10 major Indian cities:
 - Jaipur
 - Lucknow
 
-### Dataset Details
+### Main Features
 
-- Period: 2000-01-01 to 2024-12-31
-- Total records: ~91,320
-- Target: Next-day maximum temperature
-- Data frequency: Daily
+- `temperature_2m_max`
+- `temperature_2m_min`
+- `apparent_temperature_max`
+- `apparent_temperature_min`
+- `precipitation_sum`
+- `rain_sum`
+- `weather_code`
+- `wind_speed_10m_max`
+- `wind_gusts_10m_max`
+- `wind_direction_10m_dominant`
 
-## Machine Learning Model
+Additional engineered features include:
 
-The project uses a **Random Forest Regressor**.
-
-### Features
-
-The model uses weather and historical temperature features including:
-
-- Maximum temperature
-- Minimum temperature
-- Apparent maximum temperature
-- Apparent minimum temperature
-- Precipitation
-- Weather code
-- Maximum wind speed
-- Maximum wind gusts
-- Dominant wind direction
 - Month
-- Temperature lag features
-- Rolling temperature features
+- Temperature lag 1 day
+- Temperature lag 2 days
+- Temperature lag 3 days
+- Temperature lag 7 days
+- 3-day rolling temperature
+- 7-day rolling temperature
 
-## Model Performance
+## 🧠 Machine Learning Approach
 
-The Random Forest model achieved approximately:
-
-| Metric | Score |
-|---|---:|
-| MAE | 0.924°C |
-| RMSE | 1.276°C |
-| R² Score | 0.929 |
-
-The model's R² score of approximately 0.93 indicates that it explains a large portion of the variation in next-day maximum temperature.
-
-## Project Structure
+The project follows this workflow:
 
 ```text
-weather-temperature-prediction/
-│
-├── data/
-│   └── india_2000_2024_daily_weather.csv
-│
-├── models/
-│   └── weather_temperature_model.pkl
-│
-├── notebooks/
-│   └── weather_temperature_prediction.ipynb
-│
-├── src/
-│   └── predict.py
-│
-├── .gitignore
-├── README.md
-└── requirements.txt
+Historical Weather Data
+          ↓
+Data Cleaning
+          ↓
+Feature Engineering
+          ↓
+Lag & Rolling Features
+          ↓
+Train/Test Split
+          ↓
+Model Training
+          ↓
+Model Evaluation
+          ↓
+Next-Day Temperature Prediction
