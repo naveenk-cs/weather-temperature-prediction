@@ -100,7 +100,7 @@ The target variable is:
 
 ```text
 target_temperature
-
+```
 
 It represents the next day's maximum temperature.
 
