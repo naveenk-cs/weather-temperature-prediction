@@ -136,7 +136,13 @@ Model Training
 Model Evaluation
           ↓
 Next-Day Temperature Prediction
----
+
+
+### That's all. Don't change anything else.
+
+Then click **Commit changes** on GitHub.
+
+After that, GitHub should show the sections normally instead of putting everything into one big code box.
 
 ## 🛠️ Technologies Used
 
@@ -174,6 +180,13 @@ weather-temperature-prediction/
 │
 ├── .gitignore
 ├── README.md
+└── requirements.txt
+
+That's it.
+
+So it should look like this:
+
+```text
 └── requirements.txt
 
 > Note: The trained model is excluded from GitHub because the `.pkl` file is approximately 1.14 GB and exceeds GitHub's 100 MB file size limit.
