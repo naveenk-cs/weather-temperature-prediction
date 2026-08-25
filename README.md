@@ -100,3 +100,16 @@ The target variable is:
 
 ```text
 target_temperature
+
+
+It represents the next day's maximum temperature.
+
+---
+
+## 📊 Actual vs Predicted Temperature
+
+The following graph compares the actual temperatures with the temperatures predicted by the Random Forest model on the test dataset.
+
+<p align="center">
+  <img src="images/actual_vs_predicted.png" alt="Actual vs Predicted Temperature" width="900">
+</p>
